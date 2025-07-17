@@ -53,7 +53,7 @@ The goal was to uncover:
 
 ## 💡 Key SQL Snippet – CLV Scoring Logic
 
-- sql
+```sql
 UPDATE existing_users
 SET clv_score = 
     (0.4 * monthly_bill) +
