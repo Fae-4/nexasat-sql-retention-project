@@ -46,9 +46,14 @@ The goal was to uncover:
 ✅ Premium users with high tenure and usage had the highest **ARPU and CLV**  
 ✅ Multiple-line offers were effective for customers with partners or dependents  
 
+## NexaSat SQL Project – Customer Churn & CLV Analysis
+
+📄 [View full project PDF](https://docs.google.com/document/d/1nFBPex7wIfUvzGRqvpn_UGQQAeHdVWFounEoq9mpZNk/edit?usp=sharing)
+
+
 ## 💡 Key SQL Snippet – CLV Scoring Logic
 
-```sql
+- sql
 UPDATE existing_users
 SET clv_score = 
     (0.4 * monthly_bill) +
@@ -56,10 +61,5 @@ SET clv_score =
     (0.1 * call_duration) +
     (0.1 * data_usage) +
     (0.1 * CASE WHEN plan_level = 'Premium' THEN 1 ELSE 0 END);
-
-# NexaSat SQL Project – Customer Churn & CLV Analysis
-
-📄 [View full project PDF](https://docs.google.com/document/d/1nFBPex7wIfUvzGRqvpn_UGQQAeHdVWFounEoq9mpZNk/edit?usp=sharing)
-
 
 
