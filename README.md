@@ -56,3 +56,6 @@ SET clv_score =
     (0.1 * call_duration) +
     (0.1 * data_usage) +
     (0.1 * CASE WHEN plan_level = 'Premium' THEN 1 ELSE 0 END);
+> 📄 **Full Report:**  
+> [Download the full project PDF](https://docs.google.com/document/d/1nFBPex7wIfUvzGRqvpn_UGQQAeHdVWFounEoq9mpZNk/edit?usp=sharing) to view all SQL queries, segmentation logic, and retention strategies.
+
